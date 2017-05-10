@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="gb2312"?>
+<参数配置>
+  <动态衰落>
+    <收发端轨迹 value="E:\Code\QingDaoCode\4\VS2010\ChanGenTool_v1.1.0_170302\ChanGenTool\bin\Debug\files\TraData1000ms.tra" />
+    <发射天线增益 value="E:\Code\QingDaoCode\4\VS2010\ChanGenTool_v1.1.0_170302\ChanGenTool\bin\Debug\files\AnteGain.ante" />
+    <接收天线增益 value="E:\Code\QingDaoCode\4\VS2010\ChanGenTool_v1.1.0_170302\ChanGenTool\bin\Debug\files\AnteGain.ante" />
+    <信道模型 value="空-地" />
+    <极化方式 value="水平极化" />
+    <载波频率 value="900" unit="MHz" />
+    <状态更新速率 value="1000" unit="ms" />
+    <地面特性 城市="" 介电常数="15" 电导率="0.08" 角度扩展="2deg">
+      <散射环境 value="城市" />
+      <反射媒质 value="中等地面" />
+    </地面特性>
+    <加性高斯白噪声 value="False">
+      <信噪比 value="5" unit="dB" />
+    </加性高斯白噪声>
+  </动态衰落>
+  <静态衰落>
+    <路径损耗 value="10" unit="dB" />
+    <相移 value="20" unit="deg" />
+    <阴影衰落 value="True">
+      <标准差 value="5" unit="dB" />
+      <解相关长度 value="10" unit="m" />
+    </阴影衰落>
+    <加性高斯白噪声 value="True">
+      <信噪比 value="3" unit="dB" />
+    </加性高斯白噪声>
+    <表格参数 rowCount="6" colCount="6">
+      <衰落路径1 路径延迟="0ms" 相对损耗="-3dB" 衰落类型="莱斯衰落" 频谱形状="Jakes经典" 多普勒频率="1Hz" 多普勒偏移="1Hz">
+        <莱斯衰落 功率比k="5dB" 直射径入射角="1deg" />
+      </衰落路径1>
+      <衰落路径2 路径延迟="0.0004ms" 相对损耗="0dB" 衰落类型="瑞利衰落" 频谱形状="Jakes经典" 多普勒频率="1Hz" 多普勒偏移="1Hz">
+        <瑞利衰落 />
+      </衰落路径2>
+      <衰落路径3 路径延迟="0.001ms" 相对损耗="-3dB" 衰落类型="纯多普勒" 频谱形状="高斯I" 多普勒频率="100Hz" 多普勒偏移="500Hz">
+        <纯多普勒 多普勒频率="0Hz" />
+      </衰落路径3>
+      <衰落路径4 路径延迟="0.0016ms" 相对损耗="-5dB" 衰落类型="瑞利衰落" 频谱形状="高斯I" 多普勒频率="300Hz" 多普勒偏移="700Hz">
+        <瑞利衰落 />
+      </衰落路径4>
+      <衰落路径5 路径延迟="0.005ms" 相对损耗="-2dB" 衰落类型="莱斯衰落" 频谱形状="高斯II" 多普勒频率="400Hz" 多普勒偏移="800Hz">
+        <莱斯衰落 功率比k="5dB" 直射径入射角="1deg" />
+      </衰落路径5>
+      <衰落路径6 路径延迟="0.0066ms" 相对损耗="-4dB" 衰落类型="瑞利衰落" 频谱形状="高斯II" 多普勒频率="500Hz" 多普勒偏移="900Hz">
+        <瑞利衰落 />
+      </衰落路径6>
+    </表格参数>
+    <预定义信道模型 value="False">
+      <COST207远郊典型 value="False" />
+      <COST207恶劣 value="True" />
+      <COST207丘陵地区 value="False" />
+      <COST259 value="False" />
+    </预定义信道模型>
+  </静态衰落>
+  <结果覆盖 value="覆盖" />
+  <输出路径 value="E:\Code\QingDaoCode\4\VS2010\ChanGenTool_v1.1.0_170302\ChanGenTool\bin\Debug\Output\" />
+</参数配置>

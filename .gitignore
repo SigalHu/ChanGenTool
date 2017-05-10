@@ -1,0 +1,16 @@
+﻿更新内容.txt
+
+obj/
+素材/
+
+/*/bin/[Dd]ebug/*
+!/ChanGenTool/bin/[Dd]ebug/files/
+!/ChanGenTool/bin/[Dd]ebug/*.xml
+!/ChanGenTool/bin/[Dd]ebug/*.dll
+!/ChanGenTool/bin/[Dd]ebug/*.png
+
+/*/bin/[Rr]elease/*
+!/ChanGenTool/bin/[Rr]elease/files/
+!/ChanGenTool/bin/[Rr]elease/*.xml
+!/ChanGenTool/bin/[Rr]elease/*.dll
+!/ChanGenTool/bin/[Rr]elease/*.png
